@@ -1,3 +1,9 @@
 p{
 	color:red;
 }
+
+.wordsInput{
+	width:90%;
+	display: block;
+	height: 80%;
+}
