@@ -1,6 +1,7 @@
 console.log("hello js works");
 function wordCount(words){
 	words = words.toLowerCase();
+	
 	var obj ={};
 	//console.log(obj.Hello);//undefined
 	words = words.split(' ');
@@ -53,3 +54,24 @@ i : 2
 */
 
 //var xxxarray =[["ham", 1],["fart","butt"],["stinkey","feet"]];
+
+/*
+var xarray =wordCount("At New Context we protect people's security and privacy by designing and building secure, scalable systems to accelerate the digital transformation of critical infrastructure. 
+
+New Context is a rapidly growing consulting company in the heart of downtown San Francisco. Our clients are located around the world, and so are our engineers. 
+
+We specialize in Lean Security; an approach that leads organizations to build better software thru hands-on technical and management consulting. We are a group of engineers who live and breath Agile Infrastructure, Systems Automation, Cloud Orchestration, and Information Security. 
+
+Our driving methodologies are Lean Security and Humane Systems. In adopting a security first approach to infrastructure focused on people, processes and technologies, our team will have an integral part in driving the direction of these exciting new approaches.
+
+New Context Services has a division that is specifically focused on developing custom software and hardware security products for our clients. We need an experienced security product manager who can drive vision for these products and deliver on building high quality product.
+
+About The Opportunity");
+*/
+
+
+
+
+
+
+

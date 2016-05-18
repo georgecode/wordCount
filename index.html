@@ -11,9 +11,9 @@
 	<textarea class="wordsInput"></textarea>
 
 	<table ng-controller="wordsCtr as word" class="table table-striped">
-	  <tr>
-	    <td>{{word.rateing[0][0]}}</td>		
-	    <td>{{word.rateing[0][1]}}</td>
+	  <tr ng-repeat="rateing in word.rateing">
+	    <td>{{rateing[0]}}</td>		
+	    <td>{{rateing[1]}}</td>
 	  </tr>
 	</table>
 
