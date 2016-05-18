@@ -22,17 +22,21 @@ function wordCount(words){
 	}
 
 var finalArr = arr.sort(function(a,b){return b[1]-a[1]})
+return finalArr;
 //console.log(finalArr)
-
+/*
 for(var i = 0;i<finalArr.length;i++){
-	console.log(finalArr[i][0]+" : "+finalArr[i][1])
+	
+	console.log(finalArr[i][0]+" : "+finalArr[i][1]);
 
 }
-console.log("-----------------------------------");
+*/
+//console.log("-----------------------------------");
+
 	//console.log(arr);	//console.log(arr[0][0])
 }
 
-wordCount("Hello three how are  three you Three too three day");
+var xxxarray = wordCount("Hello three how are  three you Three too three day");
 /*
 three : 3
 
@@ -48,4 +52,4 @@ wordCount("hello i am a man an ant man and i know the world");
 i : 2
 */
 
-
+//var xxxarray =[["ham", 1],["fart","butt"],["stinkey","feet"]];
