@@ -1,16 +1,17 @@
 (function(){
 	
 	var app =angular.module('words',[]);
+	/*
 	app.controller('wordsCtr', function(){
 		this.rateing = xxxarray;
 
 	});
+*/
 })();
 
 
 
-
-
+	
 
 
 

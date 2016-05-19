@@ -1,7 +1,10 @@
 console.log("hello js works");
 function wordCount(words){
+	words = words.replace(/[^a-z\s]/gi,'');
+	//[^a-c]
+	//\r?\n|\r
 	words = words.toLowerCase();
-	
+
 	var obj ={};
 	//console.log(obj.Hello);//undefined
 	words = words.split(' ');
@@ -23,53 +26,57 @@ function wordCount(words){
 	}
 
 var finalArr = arr.sort(function(a,b){return b[1]-a[1]})
-return finalArr;
+//return finalArr;
 //console.log(finalArr)
-/*
+
 for(var i = 0;i<finalArr.length;i++){
 	
 	console.log(finalArr[i][0]+" : "+finalArr[i][1]);
 
 }
-*/
+
 //console.log("-----------------------------------");
 
 	//console.log(arr);	//console.log(arr[0][0])
 }
 
-var xxxarray = wordCount("Hello three how are  three you Three too three day");
+//var xxxarray = wordCount("Hello 22 three 22 how are  three you Three too three day");
 /*
 three : 3
 
 */
-wordCount("I went to the store.  I went to the office. I ate stuff");
+//wordCount("I went to the store.  I went to the office. I ate stuff");
 /*
 i : 3
 to : 2
 went :2
 */
-wordCount("hello i am a man an ant man and i know the world");
+//wordCount("hello i am a man an ant man and i know the world");
 /*
 i : 2
 */
 
 //var xxxarray =[["ham", 1],["fart","butt"],["stinkey","feet"]];
 
+$(".send" ).click(function() {
+  console.log("hello");
+  var info = document.getElementById('wordsId').value
+  info = info.replace(/(\r\n|\n|\r)/gm," ");
+  info = info.replace(/\s\s+/g, ' ');
+  console.log(info);
+  var xzarray = wordCount(info);
+  console.log(xzarray);
+});
+//var xarray =wordCount("hello");
+//var text=document.getElementById('wordsId').value;
+//console.log(document.getElementById('wordsId').value)
+//var sortInput = wordCount(text);
+//var sortInput;
 /*
-var xarray =wordCount("At New Context we protect people's security and privacy by designing and building secure, scalable systems to accelerate the digital transformation of critical infrastructure. 
-
-New Context is a rapidly growing consulting company in the heart of downtown San Francisco. Our clients are located around the world, and so are our engineers. 
-
-We specialize in Lean Security; an approach that leads organizations to build better software thru hands-on technical and management consulting. We are a group of engineers who live and breath Agile Infrastructure, Systems Automation, Cloud Orchestration, and Information Security. 
-
-Our driving methodologies are Lean Security and Humane Systems. In adopting a security first approach to infrastructure focused on people, processes and technologies, our team will have an integral part in driving the direction of these exciting new approaches.
-
-New Context Services has a division that is specifically focused on developing custom software and hardware security products for our clients. We need an experienced security product manager who can drive vision for these products and deliver on building high quality product.
-
-About The Opportunity");
+function sortInput(){
+	wordCount(text);
+}
 */
-
-
 
 
 
